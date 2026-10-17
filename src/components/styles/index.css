@@ -1,0 +1,40 @@
+/* base */
+@import url("reset.css");
+@import url("base.css");
+@import url("scrollbar.css");
+@import url("primitives/primitives.css");
+@import url("sematic/mode-dark.css");
+@import url("sematic/mode-light.css");
+@import url("sematic/viewport-s.css");
+@import url("sematic/viewport-m.css");
+@import url("sematic/viewport-l.css");
+
+/* base */
+@import url("components/text.css");
+
+/* display */
+/*@import url("components/Avatar.css");*/
+@import url("components/badge.css");
+@import url("components/card.css");
+@import url("components/chip.css");
+/*@import url("components/Collapse.css");*/
+/*@import url("components/Divider.css");*/
+
+/* feedback */
+@import url("components/alert.css");
+@import url("components/modal.css");
+
+/* input */
+@import url("components/form.css");
+@import url("components/button.css");
+@import url("components/Control.css");
+@import url("components/checkbox.css");
+@import url("components/input.css");
+@import url("components/radio.css");
+/*@import url("components/Slider.css");*/
+
+/* navigation */
+@import url("components/menu.css");
+@import url("components/Breadcrumb.css");
+@import url("components/Pagination.css");
+/*@import url("components/Tabs.css");*/

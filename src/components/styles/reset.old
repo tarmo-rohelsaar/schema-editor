@@ -1,0 +1,32 @@
+*:where(:not(html, iframe, canvas, img, svg, video, audio, svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  box-sizing: border-box;
+  scrollbar-gutter: stable;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  interpolate-size: allow-keywords;
+}
+
+[hidden] {
+  display: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+li {
+  display: grid;
+}

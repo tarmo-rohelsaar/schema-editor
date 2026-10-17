@@ -1,0 +1,48 @@
+.alert {
+  position: absolute;
+  inset-block-end: calc(var(--position) * 60px);
+  display: inline-flex;
+  gap: 1em;
+  align-items: center;
+  inline-size: 100%;
+  block-size: 55px;
+  min-block-size: 3em;
+  padding-inline: 0.5em;
+  color: var(--text-default);
+  background-color: var(--brand-color);
+  border-radius: var(--corner-radius-1);
+  box-shadow: var(--layer-01-shadow);
+  opacity: 1;
+  transition: all 400ms ease-in-out;
+
+  &.alert--hidden {
+    opacity: 0;
+    transform: translateY(1000%);
+  }
+}
+
+.alert-content {
+  flex-grow: 1;
+  margin-block: 0.25em;
+}
+
+.alert-wrapper {
+  --position: 0;
+
+  position: fixed;
+  inset-block-end: 5%;
+  inset-inline-end: 5%;
+  z-index: 1;
+  flex-direction: column-reverse;
+  inline-size: 400px;
+}
+
+.__alert-button {
+  position: absolute;
+  inset-block-start: 10px;
+  inset-inline-end: 5px;
+
+  &:hover {
+    background-color: transparent;
+  }
+}

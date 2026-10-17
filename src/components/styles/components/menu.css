@@ -1,0 +1,42 @@
+.menu {
+  inset-block-start: anchor(bottom);
+  inset-inline-start: anchor(left);
+  min-inline-size: 200px;
+  background-color: var(--layer-01-fill);
+  border-radius: var(--corner-radius-3);
+  box-shadow: var(--layer-01-shadow);
+
+  &.position-top {
+    inset-block: auto calc(anchor(top) + 8px);
+    inset-inline: anchor(left) auto;
+  }
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  min-inline-size: 120px;
+  padding: 0.5em;
+}
+
+.menu-item {
+  padding: 0.5em;
+  text-align: left;
+  cursor: pointer;
+  border-radius: var(--corner-radius-2);
+
+  &:hover {
+    background-color: var(--brand-color);
+  }
+}
+
+.menu-separator {
+  block-size: 1px;
+  margin-block-start: 0.5em;
+  background-color: var(--layer-02-stroke);
+}
+
+.menu-label {
+  padding: 4px 0 4px 4px;
+  color: var(--text-tertiary);
+}

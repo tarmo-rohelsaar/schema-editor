@@ -1,0 +1,30 @@
+.avatar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  block-size: 2rem;
+  aspect-ratio: 1;
+  overflow: clip;
+  background-color: var(--semantic-info-default);
+  border-radius: 50%;
+}
+
+.avatar-image {
+  position: absolute;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.avatar-fallback {
+  position: absolute;
+  z-index: 4;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  inline-size: 100%;
+  block-size: 100%;
+  font-size: 2rem;
+  color: var(--text-default);
+}

@@ -1,0 +1,18 @@
+.chip {
+  --chip-color: var(--interactive-default);
+
+  display: inline-flex;
+  gap: 0.25em;
+  align-items: center;
+  padding: 0.1em 0.25em;
+  line-height: 1;
+  color: var(--text-default);
+  background-color: var(--chip-color);
+  border-radius: var(--corner-radius-2);
+
+  &.chip--outlined {
+    color: var(--text-on-color);
+    background-color: transparent;
+    border: 1px solid var(--chip-color);
+  }
+}

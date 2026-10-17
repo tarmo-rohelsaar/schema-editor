@@ -1,0 +1,63 @@
+.Slider {
+  --Slider-background: var(--ui);
+  --Slider-activeBackground: var(--primary);
+  --Slider-thumb: oklch(from var(--Slider-activeBackground) calc(l - 0.1) c h);
+  --Slider-disabledBackground: var(--uiDisabled);
+  --Slider-disabledThumb: oklch(from var(--Slider-disabledBackground) calc(l + 0.1) c h);
+  --Slider-hover: oklch(from var(--uiHover) calc(l - 0.2) c h);
+
+  block-size: 8px;
+  cursor: pointer;
+  background-color: var(--Slider-background);
+  border-radius: var(--borderRadius);
+
+  &::-webkit-slider-thumb {
+    inline-size: 18px;
+    block-size: 18px;
+    appearance: none;
+    background: var(--Slider-thumb);
+    border-radius: 50%;
+    transition: outline-width 0.1s ease-in-out;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.67;
+  }
+
+  &:disabled::-webkit-slider-thumb {
+    opacity: 0.67;
+  }
+
+  &::-moz-range-thumb {
+    /* stylelint-disable-line */
+    inline-size: 18px;
+    block-size: 18px;
+    appearance: none;
+    background: var(--Slider-thumb);
+    border-radius: 50%;
+    transition: outline-width 0.1s ease-in-out;
+  }
+
+  &:disabled::-moz-range-thumb {
+    opacity: 0.67;
+  }
+
+  &:not(:disabled):hover::-webkit-slider-thumb {
+    outline: 2px solid var(--Slider-hover);
+    outline-offset: 3px;
+  }
+
+  &:not(:disabled):active::-webkit-slider-thumb {
+    outline: 5px solid var(--Slider-hover);
+  }
+
+  &:not(:disabled):hover::-moz-range-thumb {
+    outline: 2px solid var(--Slider-hover);
+    outline-offset: 3px;
+  }
+
+  &:not(:disabled):active::-moz-range-thumb {
+    outline: 5px solid var(--Slider-hover);
+  }
+}

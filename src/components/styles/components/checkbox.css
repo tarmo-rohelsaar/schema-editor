@@ -1,0 +1,66 @@
+.checkbox {
+  --checkbox-bg: var(--layer-02-fill);
+  --checkbox-bg-checked: var(--interactive-default);
+  --checkbox-disabled: var(--interactive-disabled);
+  --checkbox-checkmark: var(--text-default);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  block-size: 1.5em;
+  aspect-ratio: 1;
+  line-height: 1.5em;
+  color: var(--checkbox-checkmark);
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--checkbox-bg);
+  border: 1px solid var(--layer-02-stroke);
+  border-radius: var(--corner-radius-2);
+
+  &:checked {
+    background-color: var(--checkbox-bg-checked);
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.67;
+  }
+
+  &:not(:disabled):hover {
+    border-color: var(--interactive-hover);
+  }
+
+  &:not(:disabled):focus-visible {
+    outline: 1px solid var(--focus-outline);
+    outline-offset: 2px;
+  }
+
+  &::before {
+    display: block;
+    visibility: hidden;
+    inline-size: 100%;
+    block-size: 100%;
+    content: "";
+    background-color: var(--checkbox-bg);
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='black' d='M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z'/%3E%3C/svg%3E");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 1.2rem;
+  }
+
+  &:checked::before {
+    display: inline-block;
+    visibility: visible;
+  }
+}
+
+.checkbox-label {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  block-size: 2em;
+
+  &:has(:enabled) {
+    cursor: pointer;
+  }
+}

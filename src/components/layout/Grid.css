@@ -1,0 +1,11 @@
+@property --grid-columns {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 1;
+}
+
+.Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(calc(1000px / var(--grid-columns)), 100%), 1fr));
+  gap: var(--layout-spacing-spacer-2);
+}

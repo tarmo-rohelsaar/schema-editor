@@ -1,0 +1,59 @@
+:root {
+  @media (768px <= width < 1280px) {
+    --font-family-text: "Verdana";
+    --font-weight-bold: 700;
+
+    --font-size-d1: 74px;
+    --font-size-d2: 66px;
+    --font-size-d3: 58px;
+    --font-size-d4: 52px;
+    --font-size-d5: 46px;
+    --font-size-d6: 42px;
+    --font-size-h1: 36px;
+    --font-size-h2: 32px;
+    --font-size-h3: 28px;
+    --font-size-h4: 24px;
+    --font-size-h5: 22px;
+    --font-size-h6: 20px;
+    --font-size-text-large: 18px;
+    --font-size-text-default: 16px;
+    --font-size-text-small: 14px;
+    --font-size-text-extra-small: 12px;
+    --font-line-height-d1: 88px;
+    --font-line-height-d2: 78px;
+    --font-line-height-d3: 70px;
+    --font-line-height-d4: 62px;
+    --font-line-height-d5: 56px;
+    --font-line-height-d6: 50px;
+    --font-line-height-h1: 44px;
+    --font-line-height-h2: 38px;
+    --font-line-height-h3: 34px;
+    --font-line-height-h4: 32px;
+    --font-line-height-h5: 28px;
+    --font-line-height-h6: 24px;
+    --font-line-height-text-large: 28px;
+    --font-line-height-text-default: 24px;
+    --font-line-height-text-small: 22px;
+    --font-line-height-text-extra-small: 20px;
+    --font-font-spacingdefault: 0px;
+    --font-font-spacing-less: -0.1;
+    --font-font-spacing-more: 0.2px;
+
+    --layout-spacing-spacer-1: var(--spacing-spacer-2);
+    --layout-spacing-spacer-2: var(--spacing-spacer-3);
+    --layout-spacing-spacer-3: var(--spacing-spacer-4);
+    --layout-spacing-spacer-4: var(--spacing-spacer-5);
+    --layout-spacing-spacer-5: var(--spacing-spacer-6);
+    --layout-spacing-spacer-6: var(--spacing-spacer-7);
+    --layout-spacing-spacer-7: var(--spacing-spacer-8);
+    --layout-spacing-spacer-8: var(--spacing-spacer-9);
+    --layout-spacing-spacer-9: var(--spacing-spacer-10);
+    --layout-spacing-spacer-10: var(--spacing-spacer-11);
+    --layout-spacing-spacer-11: var(--spacing-spacer-12);
+    --layout-spacing-spacer-12: var(--spacing-spacer-13);
+
+    --layout-grid-columns: 8px;
+    --layout-grid-margin: 32px;
+    --layout-grid-gutter: 24px;
+  }
+}

@@ -1,0 +1,17 @@
+.Tabs-tab--active {
+  background-color: oklch(60% 0 89.876deg / 20%);
+  border-block-end: 1px solid var(--primaryBorder);
+}
+
+.Tabs-content {
+  display: none;
+
+  &.Tabs-content--active {
+    display: block;
+  }
+}
+
+.Active {
+  background-color: oklch(60% 0 89.876deg / 20%);
+  border-block-end: 1px solid var(--primaryBorder);
+}

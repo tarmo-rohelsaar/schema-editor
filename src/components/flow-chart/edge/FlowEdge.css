@@ -1,0 +1,13 @@
+.flow-edge {
+  pointer-events: all;
+  cursor: pointer;
+  fill: transparent;
+  stroke: rgba(168, 168, 168, 0.8);
+  stroke-width: 2;
+
+  &.flow-edge__selected {
+    z-index: 100;
+    stroke: rgb(177, 23, 23);
+    stroke-width: 3;
+  }
+}

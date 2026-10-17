@@ -1,0 +1,25 @@
+.card {
+  --card-spacing: var(--layout-spacing-spacer-2);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-inline-size: 250px;
+  overflow: clip;
+  background: var(--layer-03-fill);
+  border: 1px solid var(--layer-02-stroke);
+  border-radius: var(--corner-radius-3);
+
+  &.card--muted {
+    background: transparent;
+  }
+}
+
+.card-header {
+  padding: var(--card-spacing) var(--card-spacing) 0 var(--card-spacing);
+  font-size: 1.5em;
+}
+
+.card-content {
+  padding: var(--card-spacing) var(--card-spacing) var(--card-spacing);
+}

@@ -1,0 +1,19 @@
+html,
+:root {
+  box-sizing: border-box;
+  overflow: auto;
+  scrollbar-gutter: auto;
+  font-size: var(--font-size-text-default);
+  line-height: 100%;
+  color: var(--text-default);
+  color-scheme: normal;
+  background-color: var(--layer-01-fill);
+
+  &[data-se-theme="light"] {
+    color-scheme: light;
+  }
+
+  &[data-se-theme="dark"] {
+    color-scheme: dark;
+  }
+}

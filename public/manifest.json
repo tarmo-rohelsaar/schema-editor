@@ -1,0 +1,19 @@
+{
+  "theme_color": "#8936FF",
+  "background_color": "#2EC6FE",
+  "orientation": "any",
+  "display": "minimal-ui",
+  "dir": "auto",
+  "lang": "en-US",
+  "name": "datahub",
+  "short_name": "datahub",
+  "start_url": "http://localhost:3000/",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "logo-icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "48x48"
+    }
+  ]
+}

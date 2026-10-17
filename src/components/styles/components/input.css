@@ -1,0 +1,47 @@
+.input {
+  --input-text: var(--text-default);
+
+  position: relative;
+  display: flex;
+  column-gap: 1em;
+  align-items: center;
+  inline-size: 100%;
+  min-block-size: 2.5rem;
+  padding: 0.5em;
+  font-size: inherit;
+  color: var(--input-text);
+  background-color: var(--layer-02-fill);
+  border: 1px solid var(--layer-02-stroke);
+  border-radius: var(--corner-radius-2);
+
+  &:where(textarea) {
+    min-block-size: 6em;
+    resize: vertical;
+  }
+
+  &:where(select) {
+    padding-inline-end: 2.5em;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='oklch(50% 0 90deg / 75% )' d='M4.646 6.646a.5.5 0 01.708 0L8 9.293l2.646-2.647a.5.5 0 11.708.708l-3 3a.5.5 0 01-.708 0l-3-3a.5.5 0 010-.708z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center right 0.5rem;
+    background-size: 1.5rem;
+  }
+
+  &::placeholder {
+    color: oklch(from var(--input-text) l c h / 50%);
+  }
+
+  &:disabled {
+    background-color: var(--interactive-disabled);
+  }
+
+  &:not(:disabled):hover {
+    border-color: var(--interactive-hover);
+  }
+
+  &:not(:disabled):focus-within {
+    outline: 1px solid var(--focus-outline);
+    outline-offset: 2px;
+  }
+}

@@ -1,0 +1,59 @@
+:root {
+  @media (width >= 1280px) {
+    --font-family-text: "Veradana";
+    --font-weight-bold: 700;
+
+    --font-size-d1: 84px;
+    --font-size-d2: 74px;
+    --font-size-d3: 66px;
+    --font-size-d4: 58px;
+    --font-size-d5: 52px;
+    --font-size-d6: 46px;
+    --font-size-h1: 42px;
+    --font-size-h2: 36px;
+    --font-size-h3: 32px;
+    --font-size-h4: 28px;
+    --font-size-h5: 26px;
+    --font-size-h6: 22px;
+    --font-size-text-large: 20px;
+    --font-size-text-default: 18px;
+    --font-size-text-small: 16px;
+    --font-size-text-extra-small: 14px;
+    --font-line-height-d1: 100px;
+    --font-line-height-d2: 88px;
+    --font-line-height-d3: 78px;
+    --font-line-height-d4: 70px;
+    --font-line-height-d5: 62px;
+    --font-line-height-d6: 56px;
+    --font-line-height-h1: 50px;
+    --font-line-height-h2: 44px;
+    --font-line-height-h3: 38px;
+    --font-line-height-h4: 34px;
+    --font-line-height-h5: 30px;
+    --font-line-height-h6: 28px;
+    --font-line-height-text-large: 30px;
+    --font-line-height-text-default: 28px;
+    --font-line-height-text-small: 24px;
+    --font-line-height-text-extra-small: 22px;
+    --font-font-spacingdefault: 0px;
+    --font-font-spacing-less: -0.1px;
+    --font-font-spacing-more: 0.2px;
+
+    --layout-spacing-spacer-1: var(--spacing-spacer-3);
+    --layout-spacing-spacer-2: var(--spacing-spacer-4);
+    --layout-spacing-spacer-3: var(--spacing-spacer-5);
+    --layout-spacing-spacer-4: var(--spacing-spacer-6);
+    --layout-spacing-spacer-5: var(--spacing-spacer-7);
+    --layout-spacing-spacer-6: var(--spacing-spacer-8);
+    --layout-spacing-spacer-7: var(--spacing-spacer-9);
+    --layout-spacing-spacer-8: var(--spacing-spacer-10);
+    --layout-spacing-spacer-9: var(--spacing-spacer-11);
+    --layout-spacing-spacer-10: var(--spacing-spacer-12);
+    --layout-spacing-spacer-11: var(--spacing-spacer-13);
+    --layout-spacing-spacer-12: var(--spacing-spacer-14);
+
+    --layout-grid-columns: 8px;
+    --layout-grid-margin: 32px;
+    --layout-grid-gutter: 32px;
+  }
+}

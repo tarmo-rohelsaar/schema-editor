@@ -1,0 +1,19 @@
+.Control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.Control-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Control-error {
+  display: grid;
+  color: var(--error);
+}
+
+.Control-info {
+  display: grid;
+}

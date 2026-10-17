@@ -1,0 +1,46 @@
+:root[data-theme="dark"] {
+  --brand-color: var(--color-purple-800);
+  --brand-bg: var(--color-dark-purple-900);
+
+  --semantic-danger-default: var(--color-red-200);
+  --semantic-danger-hover: var(--color-red-100);
+  --semantic-danger-pressed: var(--color-red-100);
+  --semantic-danger-pressed-outline: var(--color-red-850);
+  --semantic-success-default: var(--color-green-450);
+  --semantic-success-hover: var(--color-green-200);
+  --semantic-success-pressed: var(--color-green-200);
+  --semantic-success-pressed-outline: var(--color-green-800);
+  --semantic-warning-default: var(--color-yellow-500);
+  --semantic-info-default: var(--color-blue-300);
+
+  --interactive-default: var(--color-blue-400);
+  --interactive-hover: var(--color-blue-300);
+  --interactive-pressed: var(--color-blue-300);
+  --interactive-selected: var(--color-blue-700);
+  --interactive-disabled: var(--color-dark-blue-600);
+  --focus-outline: var(--color-neutral-00);
+
+  --text-default: var(--color-neutral-10);
+  --text-secondary: var(--color-neutral-40);
+  --text-tertiary: var(--color-neutral-50);
+  --text-quaternary: var(--color-neutral-60);
+  --text-on-color: var(--color-neutral-00);
+  --text-on-color-inverted: var(--color-neutral-100);
+  --text-on-color-warning: var(--color-neutral-100);
+
+  --layer-01-fill: var(--color-neutral-100);
+  --layer-02-fill: var(--color-neutral-90);
+  --layer-02-stroke: var(--color-neutral-70);
+  --layer-03-fill: var(--color-neutral-80);
+  --layer-03-stroke: var(--color-neutral-70);
+  --layer-01-shadow:
+    0 3px 8px rgb(0 0 0 / 35%), 0 1px 3px rgb(0 0 0 / 50%), inset 0 1px 0 rgb(255 255 255 / 8%),
+    inset 0 0 1px rgb(255 255 255 / 30%);
+
+  --code-text: #e3e3e3;
+  --code-tag: #7cacf8;
+  --code-tag-prop: #a8c7fa;
+  --code-css-class: #fe8d59;
+  --code-css-prop: #5cd5fb;
+  --code-css-pseudo: #ff84af;
+}

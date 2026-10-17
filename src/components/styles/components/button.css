@@ -1,0 +1,103 @@
+.button {
+  --button-text: var(--text-default);
+  --button-background: var(--interactive-default);
+  --button-border: var(--interactive-default);
+
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  column-gap: 0.5rem;
+  align-items: center;
+  block-size: 2em;
+  padding-inline: 1em;
+  color: var(--button-text);
+  cursor: pointer;
+  user-select: none;
+  background-color: var(--button-background);
+  border: 1px solid var(--button-border);
+  border-radius: var(--corner-radius-2);
+  transition: transform 250ms ease-in-out;
+
+  &:disabled {
+    background-color: var(--interactive-disabled);
+  }
+
+  &:not(:disabled):hover {
+    --button-background: var(--interactive-hover);
+  }
+
+  &:not(:disabled):active {
+    --button-background: var(--interactive-pressed);
+  }
+
+  &:not(:disabled):focus-visible {
+    outline: 1px solid var(--focus-outline);
+    outline-offset: 2px;
+  }
+
+  &.button--type-text {
+    --button-background: transparent;
+    --button-border: transparent;
+
+    color: var(--interactive-default);
+
+    &:not(:disabled):hover {
+      --button-background: var(--interactive-hover);
+    }
+
+    &:not(:disabled):active {
+      background-color: oklch(from var(--button-background) l c h / 90%);
+    }
+  }
+
+  &.button--type-muted {
+    --button-text: var(--text-default);
+    --button-background: transparent;
+
+    &:not(:disabled):hover {
+      --button-background: var(--interactive-hover);
+    }
+  }
+
+  &.button--icon {
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    padding: 0;
+  }
+
+  &.button--type--icon {
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    padding: 0;
+  }
+
+  &.button--active {
+    --button-background: var(--interactive-pressed);
+  }
+
+  &.button--selected {
+    --button-background: var(--interactive-pressed);
+  }
+
+  &.button--loading {
+    &::after {
+      display: inline-block;
+      flex-shrink: 0;
+      block-size: 1em;
+      aspect-ratio: 1;
+      content: "";
+      border: 2px solid currentcolor;
+      border-inline-end-color: transparent;
+      border-radius: 50%;
+      animation: Spin 0.75s linear infinite;
+    }
+  }
+}
+
+@keyframes Spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

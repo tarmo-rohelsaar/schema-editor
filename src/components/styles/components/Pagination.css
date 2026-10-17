@@ -1,0 +1,29 @@
+.Pagination {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.Pagination-action {
+  display: flex;
+  flex-shrink: 0;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  min-inline-size: 2em;
+  padding: 0.5rem;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: var(--borderRadius);
+
+  &:disabled {
+    color: var(--uiDisabled);
+  }
+
+  &:not(:disabled):hover {
+    background-color: var(--uiHover);
+  }
+
+  &:not(:disabled):active {
+    background-color: oklch(from var(--uiHover) h s calc(l - 5));
+  }
+}

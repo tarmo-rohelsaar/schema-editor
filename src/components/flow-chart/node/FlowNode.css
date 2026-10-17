@@ -1,0 +1,63 @@
+.flow-node {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  cursor: grab;
+  user-select: none;
+  background-color: var(--color-base-200);
+  border: 1px solid #e6d4be;
+  border-radius: 6px;
+  box-shadow: 1px 1px 11px -6px rgba(0, 0, 0, 0.75);
+  transition:
+    border ease 0.2s,
+    box-shadow ease 0.2s;
+
+  &:hover {
+    background-color: var(--color-base-300);
+  }
+
+  &.flow-node__selected {
+    z-index: 100;
+    background-color: var(--color-base-300);
+    border-color: #e38c29;
+  }
+}
+
+.flow-node--label {
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.flow-node--content {
+  padding: 12px;
+}
+
+.flow-node--input-list {
+  position: absolute;
+  left: -8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.flow-node--input {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  background-color: #e38b29;
+  border-radius: 100%;
+}
+
+.flow-node--delete {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  display: none;
+  cursor: pointer;
+  fill: var(--color-red-900);
+
+  .flow-node__selected & {
+    display: block;
+  }
+}
